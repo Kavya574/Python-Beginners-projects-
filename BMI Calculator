@@ -1,0 +1,28 @@
+print("Calculate your BMI")
+
+# Ask users to enter their height and weight
+
+weight = float(input("Enter your Weight in kg: "))
+height = float(input("Enter your height in cm: "))
+
+# Formula for calculating BMI
+
+BMI = weight / (height/100)**2
+
+print("your BMI is {}".format(BMI))
+
+if BMI <= 18.4:
+    print("You're under weight")
+elif BMI <= 24.9:
+    print("You're at normal weight")
+elif BMI <= 29.9:
+    print("You're over weight")
+elif BMI <= 34.9:
+    print("Obesity class 1")   
+elif BMI <= 39.9:  
+    print("Obesity class 2")
+elif BMI >= 40:
+    print("Obesity class 3")    
+else:
+    print("You're severely obese")              
+
